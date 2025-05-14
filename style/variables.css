@@ -1,0 +1,18 @@
+:root {
+    --primary: #2563eb;   /* Синий (акценты) */
+    --dark: #1e293b;      /* Тёмно-серый (текст) */
+    --light: #f8fafc;     /* Светлый фон */
+    --gray: #94a3b8; 
+
+
+}
+
+@media (max-width:1200px) {
+    
+}
+@media (max-width:992px) {
+    
+}
+@media (max-width:768px) {
+    
+}
