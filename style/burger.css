@@ -1,0 +1,62 @@
+/* Стили для бургер-меню */
+.burger-menu {
+    display: none; /* По умолчанию скрыто */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+    position: relative;
+  }
+  
+  .burger-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Медиа-запрос для мобильных устройств */
+  @media (max-width: 768px) {
+    .burger-menu {
+      display: block;
+    }
+    
+    nav ul {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 80%;
+      height: 100vh;
+      background: #fff;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+      z-index: 999;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+    
+    nav ul.active {
+      left: 0;
+    }
+    
+    nav ul li {
+      margin: 15px 0;
+    }
+    
+    /* Анимация бургера при открытии */
+    .burger-menu.active .burger-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 6px);
+    }
+    
+    .burger-menu.active .burger-line:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .burger-menu.active .burger-line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -6px);
+    }
+  }

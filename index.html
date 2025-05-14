@@ -7,7 +7,7 @@
   <meta name="description" content="Портфолио фронтенд-разработчика Алексея Ващилина">
   <meta name="keywords" content="фронтенд, разработчик, HTML, CSS, JavaScript">
   <title>Ващилин Алексей</title>
-  <link rel="icon" href="/Portfolio/assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -15,6 +15,11 @@
 <body>
   <!-- Шапка -->
   <header>
+    <button class="burger-menu" aria-label="Меню" aria-expanded="false">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
     <nav>
       <ul>
         <li><a href="#home">Главная</a></li>
@@ -23,6 +28,7 @@
         <li><a href="#contact">Контакты</a></li>
       </ul>
     </nav>
+    <div class="overlay"></div>
   </header>
 
   <!-- Основной контент -->
@@ -44,7 +50,7 @@
       <div class="projects">
         <div class="project project1">
           <a href="https://mosq-bit.github.io/Project_LOREM/" class="link__project" target="_blank">
-            <img src="/Portfolio/assets/Lorem.PNG" alt="Проект Lorem - скриншот">
+            <img src="/assets/Lorem.PNG" alt="Проект Lorem - скриншот">
             <h3>Проект Lorem</h3>
             <p>Описание проекта. Технологии: HTML, CSS, JavaScript.</p>
           </a>
@@ -58,21 +64,21 @@
         </div>
         <div class="project project3">
           <a href="https://mosq-bit.github.io/Alto/" class="link__project" target="_blank">
-            <img src="/Portfolio/assets/project2.PNG" alt="Проект Alto - скриншот">
+            <img src="/assets/project2.PNG" alt="Проект Alto - скриншот">
             <h3>Проект Alto</h3>
             <p>Корпоративный сайт. Технологии: HTML, CSS, JavaScript.</p>
           </a>
         </div>
         <div class="project project4">
           <a href="https://mosq-bit.github.io/Blog/" class="link__project" target="_blank">
-            <img src="/Portfolio/assets/project8.PNG" alt="Проект Blog - скриншот">
+            <img src="/assets/project8.PNG" alt="Проект Blog - скриншот">
             <h3>Проект Blog</h3>
             <p>Блог-платформа. Технологии: HTML, CSS.</p>
           </a>
         </div>
         <div class="project project5">
           <a href="https://mosq-bit.github.io/vela/" class="link__project" target="_blank" rel="noopener noreferrer">
-            <img src="/Portfolio/assets/project3.PNG" alt="Лендинг Vela - интернет магазин" width="400" height="300"
+            <img src="/assets/project3.PNG" alt="Лендинг Vela - интернет магазин" width="400" height="300"
               loading="lazy">
             <h3>Проект Vela</h3>
             <p>Интернет-магазин. Технологии: HTML, CSS, JavaScript</p>
@@ -80,28 +86,28 @@
         </div>
         <div class="project project6">
           <a href="https://mosq-bit.github.io/Crhoy/" class="link__project" target="_blank">
-            <img src="/Portfolio/assets/project4.PNG" alt="Проект Crhoy - скриншот">
+            <img src="/assets/project4.PNG" alt="Проект Crhoy - скриншот">
             <h3>Проект Chroy</h3>
             <p>платформа. Технологии: HTML, CSS, JS</p>
           </a>
         </div>
         <div class="project project7">
           <a href="https://mosq-bit.github.io/-/" class="link__project" target="_blank">
-            <img src="/Portfolio/assets/project5.PNG" alt="Проект Атлант Газ - скриншот">
+            <img src="/assets/project5.PNG" alt="Проект Атлант Газ - скриншот">
             <h3>Проект Атлант Газ</h3>
             <p>платформа. Технологии: HTML, CSS, JS</p>
           </a>
         </div>
         <div class="project project8">
           <a href="https://mosq-bit.github.io/InHouse/" class="link__project" target="_blank">
-            <img src="/Portfolio/assets/project6.PNG" alt="Проект InHouse - скриншот">
+            <img src="/assets/project6.PNG" alt="Проект InHouse - скриншот">
             <h3>Проект InHouse</h3>
             <p>платформа. Технологии: HTML, CSS, JS</p>
           </a>
         </div>
         <div class="project project9">
           <a href="https://mosq-bit.github.io/DJ/" class="link__project" target="_blank">
-            <img src="/Portfolio/assets/project7.PNG" alt="Проект DJ - скриншот">
+            <img src="assets/project7.PNG" alt="Проект DJ - скриншот">
             <h3>Проект DJ</h3>
             <p>платформа. Технологии: HTML, CSS, JS</p>
           </a>
@@ -113,7 +119,7 @@
     <section id="about" class="about">
       <h2>Обо мне</h2>
       <div class="about-content">
-        <img src="/Portfolio/assets/IMG_20220910_135315.jpg" alt="Фото Алексея Ващилина">
+        <img src="/assets/IMG_20220910_135315.jpg" alt="Фото Алексея Ващилина">
         <div class="bio">
           <h3>Алексей Ващилин</h3>
           <p>Я веб-разработчик с 2-летним опытом, специализируюсь на фронтенд-разработке. Имею опыт работы с
@@ -155,6 +161,7 @@
   <footer>
     <p>&copy; 2025 Алексей Ващилин. Все права защищены.</p>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
