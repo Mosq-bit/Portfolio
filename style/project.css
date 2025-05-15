@@ -32,7 +32,7 @@
 
   .project p {
     padding: 0 1rem 1rem;
-    color: var(--light);
+    color: var(--primary);
   }
 
   .link__project {

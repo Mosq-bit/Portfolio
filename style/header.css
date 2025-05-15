@@ -12,10 +12,15 @@ nav ul {
   padding: 1.5rem;
   justify-content: center;
   list-style: none;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.7);
 }
 
+
 nav a {
-  color: var(--gray);
+  color: var(--dark);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
